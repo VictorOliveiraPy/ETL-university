@@ -10,7 +10,7 @@ configure_loggng()
 logger = logging.getLogger(__name__)
 
 
-def get_data_from_api(api_url: str) -> dict:
+def api_client(api_url: str) -> dict:
     try:
         response = requests.get(api_url).json()
     except (RequestException, Timeout, TooManyRedirects, ConnectionError) as e:
