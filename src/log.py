@@ -34,4 +34,4 @@ def configure_loggng():
         },
     }
 
-    logging.config.dictConfig(logging_dict) 
+    logging.config.dictConfig(logging_dict)

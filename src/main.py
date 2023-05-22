@@ -1,8 +1,9 @@
-from fastapi import FastAPI
-from src.log import configure_loggng
-from src.etl import ETL
 import logging
 
+from fastapi import FastAPI
+
+from src.etl import ETL
+from src.log import configure_loggng
 
 logger = logging.getLogger(__name__)
 
